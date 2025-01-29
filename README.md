@@ -24,13 +24,13 @@
   1. 小明（中国男孩）
      - 年龄：8岁
      - 特征：活泼好动，充满好奇心
-     - 外观：短发，圆脸，经常穿运动风格的校服
+     - 外观：短发，圆脸，白色短袖衬衫配米色短裤，红色领结
      - 性格：阳光开朗，喜欢探索新事物
   
   2. 小红（中国女孩）
      - 年龄：8岁
      - 特征：聪明细心，爱思考
-     - 外观：扎着双马尾，戴眼镜，穿整洁的校服
+     - 外观：扎着双马尾，戴眼镜，白色短袖衬衫配格子百褶裙，红色领结
      - 性格：认真负责，乐于助人
   
   3. 李老师（女教师）
@@ -70,32 +70,68 @@ Chinese children's book illustration, semi-realistic style, soft lighting, gentl
 
 #### 人物标准造型（6.1优化版）
 
-1. 小明正面视图：
+1. 小明三视图组合：
 ```
-Front view of 8-year-old Chinese boy, modern navy blue school uniform, round face, short black hair, height 130cm, energetic standing pose, cheerful expression, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --style raw --v 6.1 --zoom 1.2
-```
-
-2. 小红正面视图：
-```
-Front view of 8-year-old Chinese girl, modern red school uniform, round glasses, twin ponytails with red hair ties, height 128cm, neat standing pose, gentle smile, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --style raw --v 6.1 --zoom 1.2
+Character reference sheet of 8-year-old Chinese boy, three views on white background: [front view: white short-sleeve shirt, beige shorts, round face, short black hair, cheerful expression] [side view: same outfit in profile, showing natural posture] [back view: same outfit from behind, backpack detail], height 130cm, semi-realistic children's book style, clean lines, professional character design layout, labeled views, --style raw --v 6.1 --ar 16:9 --zoom 1.2
 ```
 
-3. 李老师正面视图：
+2. 小红三视图组合：
 ```
-Front view of 28-year-old Chinese female teacher, professional light blue blouse and dark skirt, shoulder-length straight black hair, height 165cm, professional standing pose, warm welcoming expression, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --style raw --v 6.1 --zoom 1.2
+Character reference sheet of 8-year-old Chinese girl, three views on white background: [front view: white short-sleeve shirt, plaid pleated skirt, round glasses, twin ponytails with red hair ties, gentle smile] [side view: same outfit in profile, showing neat posture] [back view: same outfit from behind, twin ponytails detail], height 128cm, semi-realistic children's book style, clean lines, professional character design layout, labeled views, --style raw --v 6.1 --ar 16:9 --zoom 1.2
 ```
+
+3. 李老师三视图组合：
+```
+Character reference sheet of 28-year-old Chinese female teacher, three views on white background: [front view: professional light blue blouse and dark skirt, shoulder-length straight black hair, warm expression] [side view: same outfit in profile, showing elegant posture] [back view: same outfit from behind, hair detail], height 165cm, semi-realistic children's book style, clean lines, professional character design layout, labeled views, --style raw --v 6.1 --ar 16:9 --zoom 1.2
+```
+
+#### 角色设计参考要点
+
+1. 三视图布局：
+   - 正面视图居中
+   - 侧面视图位于左侧
+   - 背面视图位于右侧
+   - 添加视角标签
+   - 包含尺寸参考线
+
+2. 统一要素：
+   - 白色背景
+   - 清晰的轮廓线
+   - 一致的比例尺
+   - 标准的站姿
+   - 完整的服装细节
+
+3. 注意事项：
+   - 保持服装细节在三个视角的一致性
+   - 确保人物比例准确
+   - 添加必要的标注
+   - 突出关键特征
 
 #### 场景示例（6.1优化版）
 
 1. 教室场景：
 ```
-Modern Chinese elementary school classroom, Xiao Ming and Xiao Hong sitting at desks while Teacher Li explains at whiteboard, organized desk rows, educational posters on walls, warm natural lighting, cheerful learning atmosphere, Chinese children's book style, --style raw --v 6.1 --zoom 1.5 --chaos 20
+Modern Chinese elementary school classroom, Xiao Ming in white shirt and beige shorts, Xiao Hong in white shirt and plaid skirt, both wearing red bow ties, sitting at desks while Teacher Li explains at whiteboard, organized desk rows, educational posters on walls, warm natural lighting, cheerful learning atmosphere, Chinese children's book style, --style raw --v 6.1 --zoom 1.5 --chaos 20
 ```
 
 2. 实验室场景：
 ```
 School science laboratory, Teacher Li demonstrating experiment, Xiao Ming and Xiao Hong wearing safety goggles observing with curiosity, clean lab equipment, safety posters, warm lighting, educational atmosphere, Chinese children's book style, --style raw --v 6.1 --zoom 1.5 --chaos 20
 ```
+
+#### 服装细节参考
+
+1. 小明夏季校服：
+- 上衣：白色短袖衬衫，胸前口袋，红色领结
+- 下装：米色短裤，长度及膝
+- 鞋子：白色运动鞋配白色短袜
+- 配饰：红色领结，胸牌
+
+2. 小红夏季校服：
+- 上衣：白色短袖衬衫，蝴蝶结领结
+- 下装：红蓝格子百褶裙，长度及膝
+- 鞋子：黑色皮鞋配白色短袜
+- 配饰：红色领结，胸牌，红色发圈
 
 #### 6.1版本特殊效果提示词
 
@@ -237,22 +273,22 @@ School science laboratory, Teacher Li demonstrating experiment, Xiao Ming and Xi
 ## 绘本制作目录结构
 
 ### 1. 角色设定（/characters）
-- 小明三视图
-  - 正面视图.png
-  - 侧面视图.png
-  - 背面视图.png
-- 小红三视图
-  - 正面视图.png
-  - 侧面视图.png
-  - 背面视图.png
-- 李老师三视图
-  - 正面视图.png
-  - 侧面视图.png
-  - 背面视图.png
-- 角色表情库
-  - 小明表情集.png
-  - 小红表情集.png
-  - 李老师表情集.png
+- 基础设定
+  - 小明三视图组合.png
+  - 小红三视图组合.png
+  - 李老师三视图组合.png
+- 表情设定
+  - 小明表情组合.png
+  - 小红表情组合.png
+  - 李老师表情组合.png
+- 动作设定
+  - 小明动作组合.png
+  - 小红动作组合.png
+  - 李老师动作组合.png
+- 参考文档
+  - 角色设定说明.md
+  - 尺寸参考表.md
+  - 服装细节说明.md
 
 ### 2. 场景设定（/scenes）
 - 教室场景
@@ -372,6 +408,40 @@ School science laboratory, Teacher Li demonstrating experiment, Xiao Ming and Xi
 - [ ] 色彩效果确认
 - [ ] 印刷适应性测试
 - [ ] 最终效果审核
+
+#### 表情组合提示词
+
+1. 小明表情组合：
+```
+Expression sheet for Xiao Ming, Chinese boy character: [happy: cheerful wide smile, bright eyes] [curious: raised eyebrows, attentive gaze] [thinking: slight frown, hand on chin] [excited: beaming smile, sparkling eyes] [focused: concentrated look, determined expression], consistent semi-realistic children's book style, clean layout with labels, white background, --style raw --v 6.1 --ar 16:9
+```
+
+2. 小红表情组合：
+```
+Expression sheet for Xiao Hong, Chinese girl character: [gentle smile: kind eyes behind glasses] [studious: focused gaze, slight head tilt] [helpful: warm encouraging smile] [thoughtful: contemplative look, slight smile] [attentive: alert expression, bright eyes], consistent semi-realistic children's book style, clean layout with labels, white background, --style raw --v 6.1 --ar 16:9
+```
+
+3. 李老师表情组合：
+```
+Expression sheet for Teacher Li, Chinese female teacher: [welcoming: warm professional smile] [teaching: engaging expression, encouraging look] [caring: gentle concerned expression] [proud: appreciative smile] [guiding: patient explanatory expression], consistent semi-realistic children's book style, clean layout with labels, white background, --style raw --v 6.1 --ar 16:9
+```
+
+#### 动作组合提示词
+
+1. 小明动作组合：
+```
+Action sheet for Xiao Ming, Chinese boy character: [running: energetic motion] [raising hand: eager to answer] [experimenting: careful handling of equipment] [playing sports: dynamic athletic pose] [reading: casual relaxed posture], consistent semi-realistic children's book style, clean layout with labels, white background, --style raw --v 6.1 --ar 16:9
+```
+
+2. 小红动作组合：
+```
+Action sheet for Xiao Hong, Chinese girl character: [writing notes: focused posture] [helping others: supportive stance] [conducting experiment: precise movements] [reading: proper studying posture] [presenting: confident speaking pose], consistent semi-realistic children's book style, clean layout with labels, white background, --style raw --v 6.1 --ar 16:9
+```
+
+3. 李老师动作组合：
+```
+Action sheet for Teacher Li, Chinese female teacher: [teaching at board: professional stance] [demonstrating experiment: careful guidance] [helping students: supportive posture] [explaining: engaging gesture] [observing: attentive monitoring pose], consistent semi-realistic children's book style, clean layout with labels, white background, --style raw --v 6.1 --ar 16:9
+```
 
 // ... rest of existing code ... #   C h e n g Y u 
  
