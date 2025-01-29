@@ -44,125 +44,82 @@
 #### 基础风格提示词
 核心风格：
 ```
-Chinese children's book illustration, semi-realistic style, soft lighting, gentle colors, clean lines, educational atmosphere, high quality, detailed, professional illustration, --ar 7:10 --v 5.2 --style raw
+Chinese children's book illustration, semi-realistic style, soft lighting, gentle colors, clean lines, educational atmosphere, high quality, detailed, professional illustration, --style raw --v 6.1
 ```
 
-风格修饰词组合：
-- 整体氛围：`warm and inviting, cheerful atmosphere, educational setting`
-- 艺术风格：`semi-realistic watercolor, clean digital art, soft textures`
-- 光影效果：`soft natural lighting, gentle shadows, warm glow`
-- 色彩基调：`vibrant but harmonious colors, pastel palette, school-themed colors`
-- 画面质感：`smooth gradients, subtle textures, clean edges`
+#### 6.1 模型特性优化
+1. 构图控制
+   - 使用 `--zoom` 调整画面远近
+   - 使用 `--pan` 微调画面位置
+   - 使用 `--tile` 生成无缝贴图
 
-#### 场景通用提示词结构
-```
-[基础场景描述], [人物描述], [动作/情节], [环境细节], [风格修饰词], [核心风格提示词], --ar 7:10 --v 5.2 --style raw
-```
+2. 画面质量
+   - 默认输出更高质量
+   - 更好的人物面部表现
+   - 更自然的光影效果
 
-#### 人物统一风格
+3. 新增参数使用
+   - `--repeat` 生成多张相似图
+   - `--chaos` 控制创意变化程度
+   - `--weird` 增加独特创意效果
 
-##### 小明三视图标准造型：
-
-1. 正面视图：
+#### 优化后的提示词结构
 ```
-Front view of 8-year-old Chinese boy, modern navy blue school uniform, round face, short black hair, height 130cm, energetic standing pose, cheerful expression, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
-```
-
-2. 侧面视图：
-```
-Side profile view of 8-year-old Chinese boy, modern navy blue school uniform, round face profile, short black hair, height 130cm, standing pose from side angle, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
+[场景描述], [人物描述], [动作/情节], [环境细节], [风格修饰词], Chinese children's book style, --style raw --v 6.1 --zoom 1.5
 ```
 
-3. 背面视图：
-```
-Back view of 8-year-old Chinese boy, modern navy blue school uniform, short black hair, height 130cm, standing pose from behind, backpack detail, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
-```
+#### 人物标准造型（6.1优化版）
 
-##### 小红三视图标准造型：
-
-1. 正面视图：
+1. 小明正面视图：
 ```
-Front view of 8-year-old Chinese girl, modern red school uniform, round glasses, twin ponytails with red hair ties, height 128cm, neat standing pose, gentle smile, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
+Front view of 8-year-old Chinese boy, modern navy blue school uniform, round face, short black hair, height 130cm, energetic standing pose, cheerful expression, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --style raw --v 6.1 --zoom 1.2
 ```
 
-2. 侧面视图：
+2. 小红正面视图：
 ```
-Side profile view of 8-year-old Chinese girl, modern red school uniform, round glasses side view, twin ponytails with red hair ties, height 128cm, standing pose from side angle, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
-```
-
-3. 背面视图：
-```
-Back view of 8-year-old Chinese girl, modern red school uniform, twin ponytails with red hair ties, height 128cm, standing pose from behind, backpack detail, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
+Front view of 8-year-old Chinese girl, modern red school uniform, round glasses, twin ponytails with red hair ties, height 128cm, neat standing pose, gentle smile, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --style raw --v 6.1 --zoom 1.2
 ```
 
-##### 李老师三视图标准造型：
-
-1. 正面视图：
+3. 李老师正面视图：
 ```
-Front view of 28-year-old Chinese female teacher, professional light blue blouse and dark skirt, shoulder-length straight black hair, height 165cm, professional standing pose, warm welcoming expression, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
+Front view of 28-year-old Chinese female teacher, professional light blue blouse and dark skirt, shoulder-length straight black hair, height 165cm, professional standing pose, warm welcoming expression, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --style raw --v 6.1 --zoom 1.2
 ```
 
-2. 侧面视图：
-```
-Side profile view of 28-year-old Chinese female teacher, professional light blue blouse and dark skirt, shoulder-length straight black hair, height 165cm, standing pose from side angle, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
-```
+#### 场景示例（6.1优化版）
 
-3. 背面视图：
+1. 教室场景：
 ```
-Back view of 28-year-old Chinese female teacher, professional light blue blouse and dark skirt, shoulder-length straight black hair, height 165cm, standing pose from behind, white background, character reference sheet, semi-realistic children's book style, clean lines, consistent character design, --ar 1:1 --v 5.2 --style raw
+Modern Chinese elementary school classroom, Xiao Ming and Xiao Hong sitting at desks while Teacher Li explains at whiteboard, organized desk rows, educational posters on walls, warm natural lighting, cheerful learning atmosphere, Chinese children's book style, --style raw --v 6.1 --zoom 1.5 --chaos 20
 ```
 
-#### 人物参考要点
-
-1. 服装细节：
-   - 小明：深蓝色校服，运动风格，配白色运动鞋
-   - 小红：红色校服，整洁大方，配黑色皮鞋
-   - 李老师：浅蓝色衬衫，深色半身裙，配黑色中跟鞋
-
-2. 发型特征：
-   - 小明：短直发，自然蓬松，略微偏分
-   - 小红：双马尾，红色发圈，整齐服帖
-   - 李老师：肩长直发，干练利落，自然垂落
-
-3. 体态特征：
-   - 小明：活泼好动，经常微微前倾
-   - 小红：端正有礼，保持良好坐姿
-   - 李老师：优雅大方，举止得体
-
-4. 表情参考：
-   - 小明：阳光笑容，眼神好奇
-   - 小红：温和微笑，眼神专注
-   - 李老师：亲切微笑，眼神温和
-
-#### 生成建议
-1. 先使用三视图提示词生成人物参考图
-2. 保存满意的 seed 值
-3. 在场景中使用相同的 seed 值确保人物特征一致性
-4. 可以使用 `--seed [数字]` 参数复用成功的人物特征
-
-#### 场景风格统一
-1. 室内场景基础提示词：
+2. 实验室场景：
 ```
-Indoor school setting, clean modern interior, warm lighting, educational decorations, organized space, semi-realistic children's book style, --ar 7:10
+School science laboratory, Teacher Li demonstrating experiment, Xiao Ming and Xiao Hong wearing safety goggles observing with curiosity, clean lab equipment, safety posters, warm lighting, educational atmosphere, Chinese children's book style, --style raw --v 6.1 --zoom 1.5 --chaos 20
 ```
 
-2. 室外场景基础提示词：
+#### 6.1版本特殊效果提示词
+
+1. 光影增强：
 ```
-Outdoor school environment, natural lighting, clear sky, school building background, safe playground setting, semi-realistic children's book style, --ar 7:10
+[基础场景], cinematic lighting, volumetric light, soft shadows, --style raw --v 6.1
 ```
 
-#### 统一细节要素
-- 光线：`soft natural lighting, gentle shadows`
-- 色调：`warm and vibrant, school-themed colors`
-- 构图：`dynamic composition, clear focal point`
-- 细节：`educational details, age-appropriate elements`
-- 氛围：`positive learning environment, friendly atmosphere`
+2. 细节增强：
+```
+[基础场景], intricate details, sharp focus, high definition, --style raw --v 6.1 --zoom 1.2
+```
 
-#### 质量控制参数
-- 添加 `--v 5.2` 获得更稳定的风格
+3. 氛围增强：
+```
+[基础场景], atmospheric, mood lighting, ambient occlusion, --style raw --v 6.1
+```
+
+#### 质量控制参数（6.1版本）
+- 使用 `--v 6.1` 获得最新模型效果
 - 使用 `--style raw` 保持画面清晰度
-- 添加 `--q 2` 提高生成质量
-- 使用 `--seed [数字]` 保持风格一致性
+- 使用 `--zoom` 调整构图
+- 使用 `--chaos` 控制变化程度（建议值：20-30）
+- 使用 `--repeat` 批量生成相似图像
 
 ### 示例组合
 
@@ -277,5 +234,145 @@ School science laboratory, Teacher Li demonstrating experiment, Xiao Ming and Xi
 - 维持角色服装的统一
 - 注意场景间的自然过渡
 
-// ... rest of existing code ... #   C h e n g Y u  
+## 绘本制作目录结构
+
+### 1. 角色设定（/characters）
+- 小明三视图
+  - 正面视图.png
+  - 侧面视图.png
+  - 背面视图.png
+- 小红三视图
+  - 正面视图.png
+  - 侧面视图.png
+  - 背面视图.png
+- 李老师三视图
+  - 正面视图.png
+  - 侧面视图.png
+  - 背面视图.png
+- 角色表情库
+  - 小明表情集.png
+  - 小红表情集.png
+  - 李老师表情集.png
+
+### 2. 场景设定（/scenes）
+- 教室场景
+  - 教室-空场景.png
+  - 教室-上课.png
+  - 教室-小组活动.png
+- 操场场景
+  - 操场-空场景.png
+  - 操场-体育课.png
+  - 操场-课间活动.png
+- 图书室场景
+  - 图书室-空场景.png
+  - 图书室-阅读.png
+  - 图书室-讨论.png
+- 花园场景
+  - 花园-空场景.png
+  - 花园-观察.png
+  - 花园-实践.png
+- 实验室场景
+  - 实验室-空场景.png
+  - 实验室-实验.png
+  - 实验室-讨论.png
+
+### 3. 分镜脚本（/storyboard）
+- 第1章：初识科学
+  - 场景1：教室引入
+  - 场景2：实验室探索
+  - 场景3：课后讨论
+- 第2章：自然探索
+  - 场景1：花园观察
+  - 场景2：记录发现
+  - 场景3：分享成果
+- 第3章：运动乐趣
+  - 场景1：操场活动
+  - 场景2：团队合作
+  - 场景3：总结收获
+- 第4章：知识殿堂
+  - 场景1：图书室探索
+  - 场景2：阅读分享
+  - 场景3：知识应用
+
+### 4. 文字内容（/text）
+- story.md（故事文本）
+- dialogs.md（对话内容）
+- descriptions.md（场景描述）
+
+### 5. 素材资源（/assets）
+- 背景元素
+  - 教室装饰
+  - 实验器材
+  - 自然元素
+  - 教学用具
+- 道具设定
+  - 书本教材
+  - 实验工具
+  - 运动器材
+  - 学习用品
+- 环境效果
+  - 光影设置
+  - 天气效果
+  - 氛围渲染
+
+### 6. 排版设计（/layout）
+- 封面设计
+- 内页版式
+- 章节页设计
+- 文字版式
+
+### 7. 输出文件（/output）
+- 预览版本
+  - 低分辨率PDF
+  - 样张图片
+- 印刷文件
+  - 高分辨率PDF
+  - 分层源文件
+- 电子版本
+  - 阅读版PDF
+  - 交互式电子书
+
+### 8. 项目文档（/docs）
+- 制作说明
+- 风格指南
+- 修改记录
+- 版本控制
+
+### 9. 工作流程
+
+1. 前期准备
+   - 确定主题和内容大纲
+   - 完成角色设定
+   - 制作场景概念图
+
+2. 内容制作
+   - 生成角色立绘
+   - 创建场景背景
+   - 编写故事文本
+   - 制作分镜脚本
+
+3. 排版设计
+   - 确定版式
+   - 编排文字
+   - 调整构图
+   - 添加细节
+
+4. 最终输出
+   - 校对内容
+   - 调整效果
+   - 输出文件
+   - 存档备份
+
+### 10. 质量检查清单
+
+- [ ] 角色一致性检查
+- [ ] 场景连贯性确认
+- [ ] 故事流畅度评估
+- [ ] 文字排版核对
+- [ ] 色彩效果确认
+- [ ] 印刷适应性测试
+- [ ] 最终效果审核
+
+// ... rest of existing code ... #   C h e n g Y u 
+ 
  
